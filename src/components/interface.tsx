@@ -8,10 +8,12 @@ export function Acomodacao (){
     )
 }
 
-export function Cabecalho (){
+export function Cabecalho (props: any){
     return (
         <div className="bg-blue-700">
             <h1>logo</h1>
+            {props.titulo}
+            {props.preco}
             {Menu ()}
         </div>
     )
