@@ -1,22 +1,11 @@
-function Acomodacao (){
-    return (
-        <>
-            <span>IMAGEM ACOMODACAO</span>
-            <h1>São Roque, Brasil</h1>
-            <p>Desc. Perto da vinícola Góes</p>
-        </>
-    )
-}
+import { Acomodacao, Cabecalho, Menu } from "@/components/interface"
 
-export default function Page(){
+export default function Pagina(){
     const nome = "João"
     return (
         <>
+            {Cabecalho()}
             {Acomodacao()}
-            <hr />
-            {Acomodacao()}
-            <hr />
-            {nome}
         </>
     )
 }
