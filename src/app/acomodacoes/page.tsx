@@ -5,7 +5,7 @@ export default function Pagina(){
         <>
             <Cabecalho
                 titulo="AirBnb"
-                subtitulo="Início"
+                subtitulo="Minhas Acomodações"
             />
             <Menu></Menu>
             <Conteudo titulo="teste">
