@@ -13,8 +13,10 @@ export function Acomodacao (){
 export function Cabecalho (props: any){
     return (
         <div className="bg-blue-700">
+            <h1>LOGO</h1>
             {props.titulo}
             {props.subtitulo}
+            {<Menu/>}
         </div>
     )
 }
@@ -51,7 +53,7 @@ export function Conteudo (props: any){
 
     return (
         <div className="bg-gray-800">
-            <p>{}</p>
+            <p>{props.children}</p>
         </div>
     )
 }

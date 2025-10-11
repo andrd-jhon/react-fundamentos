@@ -7,7 +7,6 @@ export default function Pagina(){
                 titulo="AirBnb"
                 subtitulo="Início"
             />
-            <Menu></Menu>
             <Conteudo titulo="teste">
                 <h1>Teste</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and 
