@@ -11,12 +11,13 @@ export function Acomodacao (){
 }
 
 export function Cabecalho (props: any){
+    const classe = props.className ?? "bg-blue-700"
+    
     return (
-        <div className="bg-blue-700">
+        <div className={`p-3 ${classe}`}>
             <h1>LOGO</h1>
             {props.titulo}
             {props.subtitulo}
-            {<Menu/>}
         </div>
     )
 }
@@ -49,11 +50,9 @@ export function Rodape (props: any){
 
 export function Conteudo (props: any){
 
-    console.log(props)
-
     return (
         <div className="bg-gray-800">
-            <p>{props.children}</p>
+            {props.children}
         </div>
     )
 }

@@ -1,13 +1,13 @@
 import { Cabecalho, Conteudo, Menu, Rodape } from "@/components/interface"
+import PaginaSite from "@/components/paginaSite"
 
 export default function Pagina(){
     return (
         <>
-            <Cabecalho
+            <PaginaSite
                 titulo="AirBnb"
                 subtitulo="Início"
-            />
-            <Conteudo titulo="teste">
+            >
                 <h1>Teste</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and 
                 typesetting industry. Lorem Ipsum has been the industry's 
@@ -18,8 +18,7 @@ export default function Pagina(){
                 It was popularised in the 1960s with the release of Letraset sheets 
                 containing Lorem Ipsum passages, and more recently with desktop publishing 
                 software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </Conteudo>
-            <Rodape></Rodape>
+            </PaginaSite>
         </>
     )
 }
