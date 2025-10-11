@@ -10,9 +10,15 @@ export function Acomodacao (){
     )
 }
 
-export function Cabecalho (props: any){
+interface CabecalhoProps {
+    className?: string
+    titulo: string
+    subtitulo: string
+}
+
+export function Cabecalho (props: CabecalhoProps){
     const classe = props.className ?? "bg-blue-700"
-    
+
     return (
         <div className={`p-3 ${classe}`}>
             <h1>LOGO</h1>
@@ -48,7 +54,11 @@ export function Rodape (props: any){
     )
 }
 
-export function Conteudo (props: any){
+interface ConteudoProps {
+    children: any
+}
+
+export function Conteudo (props: ConteudoProps){
 
     return (
         <div className="bg-gray-800">

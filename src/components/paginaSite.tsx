@@ -4,12 +4,12 @@ export default function PaginaSite(props: any){
     return (
         <>
             <Cabecalho
-                titulo="AirBnb"
-                subtitulo="Início"
-                className="bg-red-700"
+                className="bg-yellow-400"
+                subtitulo="Meu subtitulo"
+                titulo="Meu titulo"
             />
             <Menu/>
-            <Conteudo titulo="teste">
+            <Conteudo>
                 {props.children}
             </Conteudo>
             <Rodape></Rodape>
